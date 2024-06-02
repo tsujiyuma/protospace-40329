@@ -38,7 +38,7 @@ end
 def update
   @prototype = Prototype.find(params[:id])
   if @prototype.update(prototypes_params)
-    redirect_to prototypes_path(@prototype.id)
+    redirect_to prototype_path(@prototype.id)
   else
     render :edit, status: :unprocessable_entity
   end
