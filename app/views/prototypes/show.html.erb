@@ -51,7 +51,7 @@
               <% @comments.each do |comment| %>
                 <div>
                   <%= comment.comment %>
-                  <%= link_to "by #{comment.user.name}", user_path(@prototype.user.id), class: :comment_user %>
+                  <%= link_to "by #{comment.user.name}", user_path(comment.user.id), class: :comment_user %>
                 </div>
               <% end %>
             </li>
